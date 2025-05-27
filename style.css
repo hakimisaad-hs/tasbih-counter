@@ -1,0 +1,72 @@
+/* Global style */
+body {
+    background-color: #1a1b26;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+/* Counter number */
+#countLabel {
+    font-size: 18vw; /* responsive to screen width */
+    max-width: 100%;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    letter-spacing: -0.05em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* Button container */
+#BtnContainer {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Buttons */
+.buttons {
+    margin: 10px;
+    padding: 12px 28px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    background-color: #3d3e58;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.buttons:hover {
+    background-color: #878792;
+    transform: scale(1.05);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+}
+@media (min-width: 1200px) {
+    #countLabel {
+        font-size: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .buttons {
+        font-size: 1.4rem;
+        padding: 10px 20px;
+    }
+
+    #countLabel {
+        font-size: 22vw;
+    }
+}
